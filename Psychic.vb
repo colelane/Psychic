@@ -25,6 +25,7 @@ Module Psychic
                 nums(CInt(j)) = CInt(newVal)
             Next
             randomnumber = GetRandomNumber(1, 10)
+            Console.WriteLine(randomnumber)
             Console.ForegroundColor = ConsoleColor.Black
             For i = 0 To 9
                 Console.Clear()
@@ -32,7 +33,7 @@ Module Psychic
                 If CInt(strs(CInt(i))) = randomnumber Then
                     Console.BackgroundColor = ConsoleColor.Red
                     Console.WriteLine(strs(CInt(i)))
-                    Threading.Thread.Sleep(200)
+                    Threading.Thread.Sleep(70)
                     GoTo poop
                 Else
                     ligma = GetRandomNumber(1, 5)
@@ -57,7 +58,7 @@ poop:
             Console.ForegroundColor = ConsoleColor.White
             Console.Clear()
             Console.WriteLine("Your number is....")
-            Threading.Thread.Sleep(3000)
+            Console.ReadLine()
             Console.WriteLine(randomnumber)
             Console.ReadLine()
             Erase strs
